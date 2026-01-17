@@ -1,10 +1,10 @@
-
 ---
 
 title: Skills as a Service
 date: 2026-01-17
 description: The debate about AI and labor starts one step too late. What happens when the tools are in your hands, not just your employer's?
----------------------------------------------------------------------------------------------------------------------------------------------
+
+---
 
 I’ve been trying to reason about a version of the AI future that the standard labor debate tends to skip: AI not as something management deploys *on* workers to replace them, but as something an individual can pick up and wield directly.
 
