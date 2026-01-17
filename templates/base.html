@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body class="{{pageClass}}">
+    <div class="bg-grid"></div>
+    <div class="scanlines"></div>
+    <header class="site-header">
+      <a class="site-title" href="/">ADA://NODE</a>
+      <nav class="site-nav">
+        <a href="/posts/">POSTS</a>
+        <a href="/projects/">PROJECTS</a>
+      </nav>
+    </header>
+    <main class="page">
+      {{content}}
+    </main>
+    <footer class="site-footer">
+      <span>Signal: ACTIVE</span>
+      <span>Latency: 7ms</span>
+      <span>(c) 1998 // 2025 Ada</span>
+    </footer>
+    <script>
+      window.__POSTS__ = {{postsJson}};
+    </script>
+    <script src="/assets/app.js" defer></script>
+    <script>
+      if (location.hostname === "localhost") {
+        const source = new EventSource("/__reload");
+        source.addEventListener("message", () => {
+          window.location.reload();
+        });
+      }
+    </script>
+  </body>
+</html>
